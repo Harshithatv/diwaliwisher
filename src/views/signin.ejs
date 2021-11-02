@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<base href="/">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body id="inner">
+		
+		<center>
+			<% if(msg !=''){%>
+				<div style="width: 50%;" class="alert alert-success alert-dismissible  show" role="alert">
+				 <strong></strong><%= msg %>
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				  <span aria-hidden="true">&times;</span> 
+				</div>
+				<%}%>
+		<h2 style="color: white;">Hi <%=wish.username%> </h2>
+		<h1 style="color:yellow;font-weight: bold;">Happy Diwali</h1>
+		<h3 style="color: white;">Your Diwali Wish To <%=wish.name%> Is Successfully Created</h3>
+		<br>
+		</center>
+		<center>
+
+			
+				<a href="/send/<%=wish._id%>" type="button" style="width:50%;background-color:orange;color: white;"class="btn btn-lg mx-2">Send E-mail</a>
+					<br>
+					<br>
+				<a href="/wish/<%=wish._id%>" type="button" style="width:50%;background-color:darksalmon;color: white;"class="btn btn-lg mx-2">Preview</a>
+
+			
+
+		</center>
+      
+	     
+      
+     
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

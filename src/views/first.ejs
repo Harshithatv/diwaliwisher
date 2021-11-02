@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<base href="/">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!--<h1>DIWALI WISHES</h1>
+		<p>May The Beauty Of Diwali Fill Your World And Your Heart And May The Love That Is Always Yours,Bring You Endless Joy</p>
+		<h2>Happy Diwali</h2>-->
+		<h1 style="color: yellow;">HAPPY DIWALI</h1>
+		<h2 style="color: white;font-family: Arial, Helvetica, sans-serif;">Create Diwali Wish For Your Loved Ones Here</h2>
+		<form method="POST" action="/submit" class="form-container">
+			<div class="field user">
+			  <div class="input-area"> 
+			   Your Name  <input type="text" placeholder="" name="username" required>	
+			  </div>
+			</div>
+			
+			<br>
+			<div class="field users">
+				<div class="input-area"> 
+				Friend's Name<input type="text" placeholder="" name="name" required>	
+				</div>
+			  </div>
+			  <br>
+			  <div class="field email">
+				<div class="input-area"> 
+				Friend's Email<input type="email" placeholder="" name="email" required>	
+				</div>
+			  </div>
+			  <br>
+			  <button id="btn">CREATE</button>
+		  </form>
+		 
+		  
+		 
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
